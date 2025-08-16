@@ -1,4 +1,3 @@
-# huatai_text2sql
 # T-Metrics SQL Generator / T-Metrics SQL 生成器
 
 ### Overview
