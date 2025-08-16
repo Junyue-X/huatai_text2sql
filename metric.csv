@@ -1,0 +1,380 @@
+﻿视图,子视图,CPU配额,指标代码,tagK1,tagK2,tagV1,tagV2,图/表,难度
+全链路监控,行情,tick行情延时,tickInsightAvgDealy,securityExchange,center,"""深交所""  2,上交所 ： 1",""" ""SZ""  / ""NJ""",,简单
+,,tick行情10日均值,tickInsightAvgDealy_10Avg,,,,,,中等
+,,order行情延时,orderInsightAvgDealy,,,,,,简单
+,,order行情10日均值,orderInsightAvgDealy_10Avg,,,,,,中等
+,,trans行情延时,transInsightAvgDealy,,,,,,简单
+,,trans行情10日均值,transInsightAvgDealy_10Avg,,,,,,中等
+,策略,已启动,strategyTypeToRunStrategyIdRate,,center,,"""SZ"" / ""SH"" /"" NJ",,简单
+,,未启动,strategyTypeToInitStrategyIdRate,,,,,,简单
+,,已暂停,strategyTypeToPauseStrategyIdRate,,,,,,简单
+,,策略策略成交额,strategyAmount,center,,"""SZ"" / ""SH"" /"" NJ",,,简单
+,订单,OMS延迟,currentOrderDelay,securityExchange,center,"""深交所""  2,上交所 ： 1",""" ""SZ"" / ""NJ""",,简单
+,,柜台延迟,counterCurrentDelay,,,,,,简单
+,,交易所延迟,exchangeCurrentDelay,,,,,,简单
+,,OMS10日均值,currentOrderDelay_10Avg,,,,,,简单
+,,柜台10日均值,counterCurrentDelay_10Avg,,,,,,中等
+,,交易所10日均值,exchangeCurrentDelay_10Avg,,,,,,中等
+,柜台,异常订单数量趋势,"countRejectOrder + counterPositiveOrder           ""isJoinTag"": true,",center,,,,,简单
+,,比例,counterOrder,,,,   ,,简单
+,,正报待撤订单,counterPositiveOrder,,,,,,简单
+,,废单,riskTrigger,,,,,,简单
+,,废单类型,countRejectOrder,,,,,,简单
+,全链路监控中间部分,中心成交额,strategyOrder,center,,SZ,,,简单
+,,,,,,SH,,,
+,,,,,,NJ,,,
+,,全链路延迟,,.shenzhen     /     .center.     /     delay,,,,,
+,,,,.nanjing.     /     center.     /     delayRight；nanjing.     /     center.     /     delayLeft,,,,,
+,,,,.shanghai.     /     center.     /     delay,,,,,
+,,行情节点,,.shenzhen     /      .market     /      .host,,,,,
+,,,,    .nanjing     /      .market     /      .host,,,,,
+,,,,   .shanghai     /      .market     /      .host,,,,,
+,,行情延时,,  .shenzhen     /      .market     /      .delay,,,,,
+,,,,    .nanjing     /      .market     /      .inDelay  ； .nanjing   /  .market     /   .outDelay,,,,,
+,,,,   .shanghai     /      .market     /      .delay,,,,,
+,,策略节点,,   .shenzhen     /      .strategy     /      .node,,,,,
+,,,,    .nanjing     /      .strategy     /      .node,,,,,
+,,,,  .shanghai     /      .strategy     /      .node, ,,,,
+,,策略延时,,   .shenzhen     /      .strategy     /      .errorNode,,,,,
+,,,,  .nanjing     /      .strategy     /      .errorNode,,,,,
+,,,,  .shanghai     /      .strategy     /      .errorNode ,,,,,
+,,订单节点,,.shenzhen    /     .order    /     .node   ； .shenzhen    /     .order    /     .count,,,,,
+,,,,.nanjing    /     .order    /     .node ； .nanjing    /     .order    /     .count,,,,,
+,,,,.shanghai    /     .order    /     .node ； .shanghai    /     .order    /     .count,,,,,
+,,订单延时,,.shenzhen    /     .order    /     .delay,,,,,
+,,,, .nanjing    /     .order    /     .inDelay  ； .nanjing    /     .order    /     .outDelay,,,,,
+,,,,.shanghai    /     .order    /     .delay,,,,,
+,,柜台节点,,.shenzhen    /     .counter    /     .node,,,,,
+,,,,.nanjing    /     .counter    /     .node,,,,,
+,,,,.shanghai    /     .counter    /     .node,,,,,
+,,柜台延时,,.shenzhen    /     .counter    /     .delay,,,,,
+,,,, .nanjing    /     .order    /     .inDelay  ； .nanjing    /     .order    /     .outDelay,,,,,
+,,,, .shanghai    /     .counter    /     .delay,,,,,
+, ,大数据业务总成交额,orderAmount,center,,,,,简单
+,,总成交订单数,filledOrderCount,,,,,,
+,,策略实例总数,algoStrategyIdCount,,,,,,
+,,触发风控总数,riskTrigger,center,,,,,
+系统监控-研究,团队资源,CPU占用,cpuUsed,team,,"高频Alpha团队，金工&交易团队，日内T0团队
+另类策略团队，系统研发团队，因子管理系统
+高频择时团队，创新投资团队，低频量化团队
+市场监控交易团队，
+",,,
+,,内存占用,memUsed,,,,,,
+,,GPU占用,gpuUsed,,,,,,
+,,CPU配额,cpuQuota,,,,,,
+,,内存配额,memQuota,,,,,,
+,,GPU配额,gpuQuota,,,,,,
+,,NAS配额,storageQuota,,,,,,
+,,NAS占用,storageUsed,,,,,,
+,平台数据准备情况,数据状态,Status,,,,,,
+,,计划更新时间,planUpdateTime,,,,,,
+,,"
+实际更新时间",realUpdateTime,,,,,,
+,分时任务数,分时任务数,taskDetailNum,"""isJoinTag"": true,   ""samplingFrequecy"": 0,",,,,图,
+,异常任务,,taskNum,,,,,,
+系统监控-行情,行情数据情况,tick当前分钟,tickInsightMsgCount,securityExchange,center,1  ;   2,NJ,图,
+,,tick当日最大,tickInsightMaxCount,,,,,,
+,,tick10日均值,tickInsightMsgCount_10Avg,,,,,,中等
+,,tick到目前平均,tickInsightAvgCount,,,,,,中等
+,,order当前分钟,orderInsightMsgCount,,,,,,简单
+,,order当日最大,orderInsightMaxCount,,,,,,简单
+,,order10日均值,orderInsightMsgCount_10Avg,,,,,,中等
+,,order到目前平均,orderInsightAvgCount,,,,,,中等
+,,trans当前分钟,transInsightMsgCount,,,,,,简单
+,,trans当日最大,transInsightMaxCount,,,,,,简单
+,,trans10日均值,transInsightMsgCount_10Avg,,,,,,简单
+,,trans到目前平均,transInsightAvgCount,,,,,,简单
+,行情延迟情况,tick行情当前分钟,tickInsightAvgDealy,securityExchange,center,1  ;   2,NJ / SH / SZ ,图,简单
+,,tick行情当日最大,tickInsightMaxDealy,,,,,,简单
+,,tick行情到目前平均,tickInsightDailyDelay,,,,,,中等
+,,tick行情10日均值,tickInsightAvgDealy_10Avg,,,,,,中等
+,,tick行情当前延迟95%分位数,tickInsightQuantileDelay,,,,,,困难
+,,tick行情当前延迟中位数,tickInsightMedianDelay,,,,,,困难
+,,order行情当前分钟,orderInsightAvgDealy,,,,,,简单
+,,order行情当日最大,orderInsightMaxDealy,,,,,,简单
+,,order行情到目前平均,orderInsightDailyDelay,,,,,,中等
+,,order行情10日均值,orderInsightAvgDealy_10Avg,,,,,,中等
+,,order行情当前延迟95%分位数,orderInsightQuantileDelay,,,,,,困难
+,,order行情当前延迟中位数,orderInsightMedianDelay,,,,,,困难
+,,trans行情当前分钟,transInsightAvgDealy,,,,,,简单
+,,trans行情当日最大,transInsightDailyDelay,,,,,,简单
+,,trans行情到目前平均,transInsightMaxDealy,,,,,,中等
+,,trans行情10日均值,transInsightAvgDealy_10Avg,,,,,,中等
+,,trans行情当前延迟95%分位数,transInsightQuantileDelay,,,,,,困难
+,,trans行情当前延迟中位数,transInsightMedianDelay,,,,,,困难
+,行情异常情况,分钟k丢失、tick未更新,insightException," ""isJoinTag"": true",,,,,简单
+系统监控-策略,"
+各中心策略节点的实例情况",节点总数,algoNodeCount,,,,,,简单
+,,在线节点,algoOnLineNodeCount,,,,,,简单
+,,中心下策略类型,strategyTypeCount,,,,,,简单
+,,中心下策略实例,algoStrategyIdCount,,,,,,简单
+,,策略名称,strategyTypeList,,,,,,简单
+,,可显示策略名称,strategyTypeToAlgoNodes,,,,,,简单
+,,策略下策略实例,strategyTypeToStrategyIdCount,,,,,,简单
+,,占据节点,strategyTypeToAlgoNodeCount,,,,,,简单
+,,在线节点,strategyTypeToAlgoOnLineNodeCount,,,,,,简单
+,,节点下策略类型,algoNodeToStrategyTypeCount,,,,,,简单
+,,节点下策略实例,algoNodeToStrategyIdCount,,,,,,简单
+,,当前状态,algoNodeStatus,,,,,,简单
+,,数据类型（语言）,strategyTypeToLanguage,,,,,,简单
+,各中心&各策略类型订单情况,正常订单,strategyOrder,center,,SH  / SZ /NJ,,,简单
+,,废单,strategyReject,,,,,,简单
+,,废单10日均值,strategyReject_10Avg,,,,,,中等
+,各中心风控情况,风控信息,riskTrigger,center,,SH  / SZ /NJ,,,简单
+系统监控-订单,OMS节点情况,节点状态,omsNodeOfflineTime,center,,SH  / SZ /NJ,,,简单
+,各中心&各节点订单情况,订单总量,orderCount,,,,,,简单
+,,已报待撤单,cancelCount,,,,,,简单
+,,废单数,rejectCount,,,,,,简单
+,,废单数 - 柱状图,nodeOrderCount,center,omsNode,,,图,简单
+,,已报待撤单 - 柱状图,nodeCancelCount,,,,,,简单
+,,其他订单 - 柱状图,nodeRejectCount,,,,,,简单
+,OMS订单延迟情况,当前延迟,currentOrderDelay,securityExchange,center,"""深圳证券交易所""  2,上海证券交易所 ： 1",NJ / SH / SZ ,,简单
+,,最大延迟,maxOrderDelay,,,,,,简单
+,,平均延迟,dailyAvgOrderDelay,,,,,,中等
+,,10日平均延迟 ,currentOrderDelay_10Avg,,,,,,中等
+系统监控-柜台,柜台节点情况,节点状态,counterNodeOfflineTime,center,,SH  / SZ /NJ,,,简单
+,各中心订单情况,订单总量,counterOrder,,,,,,简单
+,,已报待撤单,counterPositiveOrder,,,,,,简单
+,,废单,countRejectOrder,,,,,,简单
+,各中心风控情况,风控信息,riskTrigger,,,,,,简单
+,报盘吞吐量,报盘吞数据,throughPutCount,"""isJoinTag"": true",,,,,简单
+,柜台及交易所延迟情况,柜台当前延迟,counterCurrentDelay,securityExchange,center,"""深圳证券交易所""  2,上海证券交易所 ： 1",NJ / SH / SZ ,,简单
+,,柜台最大延迟,counterMaxDelay,,,,,,简单
+,,柜台平均延迟,counterDailyAvgDelay,,,,,,中等
+,,柜台十日均值,counterCurrentDelay_10Avg,,,,,,中等
+,,交易所当前延迟,exchangeCurrentDelay,,,,,,简单
+,,交易所最大延迟,exchangeMaxDelay,,,,,,简单
+,,交易所平均延迟,exchangeDailyAvgDelay,,,,,,中等
+,,交易所10日均值,exchangeCurrentDelay_10Avg,,,,,,中等
+交易监控-交易主屏,近十分钟k线延迟,10分钟延迟,tickInsightDelayDistribution," ""samplingFrequency"": 0,
+""isJoinTag"": true",,,,,中等
+,,当前分钟延迟,tickInsightAvgDealy,,,,,,简单
+,近10分钟trans延迟,10分钟延迟,transInsightDelayDistribution,,,,,,中等
+,,当前分钟延迟,transInsightAvgDealy,,,,,,简单
+,近10分钟order延迟,10分钟延迟,orderInsightDelayDistribution,,,,,,中等
+,,当前分钟延迟,orderInsightAvgDealy,,,,,,简单
+,近10分钟订单延迟,10分钟延迟,orderDelayDistribution,,,,,,中等
+,,当前分钟延迟,currentOrderDelay,,,,,,简单
+,交易主视图中间部分,策略名称 ,/api/strategy/queryXmasterStrategy     application/json 获取5个策略分类的子类名称,,,,,,简单
+,,买入交易额,strategyBuyAmount,,,,,,简单
+,,卖出交易额,strategySellAmount,,,,,,简单
+,,买入/卖出平仓 | 买入/卖出开仓,tradeCount,,,,,,简单
+,,撤单占比,strategyCommissionWithdrawalRatio,,,,,,简单
+,,集群负载 ,cpuUtilization,,,,,,简单
+,,行情连接,onlineStatus,,,,,,简单
+,,节点数量,strategyGroupToAlgoNodeCount,,,,,,简单
+,,在线节点,strategyGroupToAlgoOnLineNodeCount,,,,,,简单
+,,策略实例--策略总数,strategyTypeToStrategyIdCount,,,,,,简单
+,,策略实例--已暂停,strategyTypeToPauseStrategyIdCount,,,,,,简单
+,,策略实例--未启动,strategyTypeToInitStrategyIdCount,,,,,,简单
+,,策略实例--运行中,strategyTypeToRunStrategyIdCount,,,,,,简单
+,,订单情况--废单|OMS,strategyReject,,,,,,简单
+,,订单情况--废单|柜台,strategyCounterReject,,,,,,简单
+,,订单情况--异常|OMS,strategyAbnormal,,,,,,简单
+,,订单情况--异常|柜台,strategyCounterPartiallyFilledForCancel,,,,,,简单
+,,订单情况--已报|OMS,strategyNew,,,,,,简单
+,,订单情况--已成|OMS,strategyFilled,,,,,,简单
+,,订单情况--部撤|OMS,strategyPartiallyCancel,,,,,,简单
+,,订单情况--已撤|OMS,strategyCanceled,,,,,,简单
+,账户监控,产品账户,productAccount ,,,,,,困难
+,,资产账户,assetAccount,,,,,,
+,,组合编号,portfolioNo,,,,,,
+,,保证金比例,proportion,,,,,,
+,,现金余额,holdingCash,,,,,,
+,告警,告警分类监控,userId,,,,,,非指标
+,,告警状态分布,userId,,,,,,非指标
+,交易主视图顶部,现货交易额,orderAmount,center,,,,,简单
+,,策略实例,algoStrategyIdCount,,,,,,简单
+,,委托笔数,totalOrderCount,,,,,,简单
+,,废单,allRejectCount,,,,,,简单
+交易监控-盘前,策略版本,更新时间 / 策略版本 / 策略类型,/api/strategy/queryXmasterStrategy     application/json 获取更新时间 / 策略版本 / 策略类型,,,,,,简单
+,各中心和各策略的节点和实例汇总情况,节点数量,algoOnLineNodeCount,,,,,,简单
+,,实例数量,strategyTypeToStrategyIdCount,,,,,,简单
+,,部署节点数量,strategyTypeDeploymentNodeCount,,,,,,简单
+,,运行节点数量,strategyTypeToAlgoNodeCount,,,,,,简单
+,,运行实例数量,strategyTypeToStrategyIdCount,,,,,,简单
+,各中心与各策略的实例情况,已暂停,strategyTypeToPauseStrategyIdCount,,,,,,简单
+,,未启动,strategyTypeToInitStrategyIdCount,,,,,,简单
+,,运行中,strategyTypeToRunStrategyIdCount,,,,,,简单
+,,实例总数,strategyTypeToStrategyIdCount,,,,,,简单
+,,异常实例数 ,strategyTypeToUndefinedStrategyIdCount,,,,,,简单
+,各中心、各策略和各节点的实例占比情况,节点总数,algoNodeCount,,,,,,简单
+,,在线节点,algoOnLineNodeCount,,,,,,简单
+,,中心下策略类型,strategyTypeCount,,,,,,简单
+,,中心下策略实例,algoStrategyIdCount,,,,,,简单
+,,策略名称,strategyTypeList,,,,,,简单
+,,可显示策略名称,strategyTypeToAlgoNodes,,,,,,简单
+,,策略下策略实例,strategyTypeToStrategyIdCount,,,,,,简单
+,,占据节点,strategyTypeToAlgoNodeCount,,,,,,简单
+,,在线节点,strategyTypeToAlgoOnLineNodeCount,,,,,,简单
+,,节点下策略类型,algoNodeToStrategyTypeCount,,,,,,简单
+,,节点下策略实例,algoNodeToStrategyIdCount,,,,,,简单
+,,当前状态,algoNodeStatus,,,,,,简单
+,,数据类型（语言）,strategyTypeToLanguage,,,,,,简单
+,策略配置,指定账户下所有策略,userId,,,,,,简单
+,,已选策略,/api/strategy/queryXmasterStrategy  无入参,,,,,,简单
+交易监控-盘中,策略运行 - 各策略策略实例情况,实例总数,strategyTypeToStrategyIdCount,,,,,,简单
+,,未启动实例数,strategyTypeToInitStrategyIdCount,,,,,,简单
+,,已暂停实例数,strategyTypeToRunStrategyIdCount,,,,,,简单
+,,已启动实例数,strategyTypeToPauseStrategyIdCount,,,,,,简单
+,,异常实例数,strategyTypeToUndefinedStrategyIdCount,,,,,,简单
+,,轮播时间,carouselTimeCount,,,,,,简单
+,策略运行 -策略集群内存CPU情况,节点,ipSetList,,,,,,简单
+,,策略名称,algoNodeToStrategyType,,,,,,简单
+,,策略数量（以前的系统指标，需要看下是否可用）,algoNodeToStrategyTypeCount,,,,,,简单
+,,内存配额,memoryQuota,,,,,,简单
+,,内存当前占用情况,NodeVirtualMemUtilization,,,,,,简单
+,,内存当天最大占用情况,NodeMaxVirtualMemUtilization,,,,,,简单
+,,内存当天平均占用情况,NodeAvgVirtualMemUtilization,,,,,,简单
+,,CPU配额,CPUQuota,,,,,,简单
+,,cpu当前占用情况,NodeCpuUtilization,,,,,,简单
+,,cpu当天平均占用情况,NodeAvgCpuUtilization,,,,,,简单
+,,cpu当天最大占用情况,NodeMaxCpuUtilization,,,,,,简单
+,,行情连接,onlineStatusDetail,,,,,,简单
+,策略运行 -策略表现,策略名称,/api/strategy/queryXmasterStrategy,,,,,,简单
+,,买入交易额,strategyBuyAmount,,,,,,简单
+,,卖出交易额,strategySellAmount,,,,,,简单
+,,买入卖出开平仓,tradeCount,,,,,,简单
+,策略运行 -行情全链路延时,tick行情当前分钟,tickInsightAvgDealy,securityExchange,center,"""深圳证券交易所""  2,上海证券交易所 ： 1",NJ / SH / SZ ,图,简单
+,,tick行情当日最大,tickInsightMaxDealy,,,,,,简单
+,,tick行情到目前平均,tickInsightDailyDelay,,,,,,中等
+,,tick行情当前10日均值,tickInsightAvgDealy_10Avg,,,,,,中等
+,,tick行情当前延迟95%分位数,tickInsightQuantileDelay,,,,,,困难
+,,tick行情当前延迟中位数,tickInsightMedianDelay,,,,,,困难
+,,order行情当前分钟,orderInsightAvgDealy,,,,,,简单
+,,order行情当日最大,orderInsightMaxDealy,,,,,,简单
+,,order行情到目前平均,orderInsightDailyDelay,,,,,,中等
+,,order行情当前10日均值,orderInsightAvgDealy_10Avg,,,,,,中等
+,,order行情当前延迟95%分位数,orderInsightQuantileDelay,,,,,,困难
+,,order行情当前延迟中位数,orderInsightMedianDelay,,,,,,困难
+,,trans行情当前分钟,transInsightAvgDealy,,,,,,简单
+,,trans行情当日最大,transInsightMaxDealy,,,,,,简单
+,,trans行情到目前平均,transInsightDailyDelay,,,,,,中等
+,,trans行情当前10日均值,transInsightAvgDealy_10Avg,,,,,,中等
+,,trans行情当前延迟95%分位数,transInsightQuantileDelay,,,,,,困难
+,,trans行情当前延迟中位数,transInsightMedianDelay,,,,,,困难
+,订单情况-不同策略订单情况,oms废单,strategyReject,,,,,,简单
+,,oms异常,strategyAbnormal,,,,,,简单
+,,oms已报,strategyNew,,,,,,简单
+,,oms部成,strategyPartiallyFilled,,,,,,简单
+,,oms已撤,strategyCanceled,,,,,,简单
+,,oms部撤,strategyPartiallyCancel,,,,,,简单
+,,oms已成,strategyFilled,,,,,,简单
+,,柜台废单,strategyCounterReject,,,,,,简单
+,,柜台已报,strategyCounterNew,,,,,,简单
+,,柜台已撤,strategyCounterCancel,,,,,,简单
+,,柜台部撤,strategyCounterPartiallyCancel,,,,,,简单
+,,柜台待撤,strategyCounterPendingCancel,,,,,,简单
+,,柜台正报,strategyCounterReady,,,,,,简单
+,,柜台待报,strategyCounterReadyForFill,,,,,,简单
+,订单情况 - 订单耗时,当前延迟,currentOrderAndCounterDelay,,,,,,简单
+,,最大值,maxOrderAndCounterDelay,,,,,,简单
+,,平均值,dailyAvgOrderAndCounterDelay,,,,,,简单
+,,历史75%分位数,currentOrderAndCounterDelay_10Avg,,,,,,中等
+,,当前订单消耗延迟时间段数据,currentOrderAndCounterDelay,,,,,,简单
+,订单情况 -订单委撤,订单委撤情况,statisticsCounterOrders,,,,,,中等
+,订单情况 -策略实例的撤单比,策略实例的撤单比,algoOrderCommissionWithdrawalRatio,,,,,,中等
+,订单情况 -撤单占比图,中心撤单占比数据,algoCenterOrderCommissionWithdrawalRatio,,,,,,中等
+,订单情况 - T0监控 -撤单比,T0委撤比,averageCommissionWithdrawalRatio,,,,,,中等
+,,T0监控最大亏损率,maxprofit,,,,,,中等
+,,总收益,totalRevenue,,,,,,中等
+,,买入成交额,strategyBuyAmount2,,,,,,中等
+,,卖出成交额,strategySellAmount2,,,,,,中等
+,订单情况 - 期货开平多空张数,开仓,openCount,,,,,,中等
+,,平仓,closeCount,,,,,,中等
+,,多头,longCount,,,,,,中等
+,,空头,shortCount,,,,,,中等
+,账户情况,资产账户,assetAccount,,,,,,困难
+,,组合账户,portfolioNo,,,,,,困难
+,,产品账户,productAccount ,,,,,,困难
+,,T+0交易可用,tradeAbleCash,,,,,,困难
+,,可用保证金,accountTradableDeposit,,,,,,困难
+,,占用保证金,accountOccupiedDeposit,,,,,,困难
+,,可用保证金比例,proportion,,,,,,困难
+,,现货持仓市值,positionHoldingAmount,,,,,,困难
+,,期货净空头市值,netShortPositionAmount,,,,,,困难
+,,现-期敞口,currentExposure,,,,,,困难
+,,买入成交总金额,purchaseAmount,,,,,,困难
+,,卖出成交总金额,sellAmount,,,,,,困难
+,,净买入金额,netPurchaseAmount,,,,,,困难
+,,委托总金额,entrustedAmount,,,,,,困难
+,,上交所现货净买入,shNetSpotPurchase,,,,,,困难
+,,深交所现货净买入,szNetSpotPurchase,,,,,,困难
+交易监控-盘后,自动化交易,股票T0策略 交易账户 ,t0TradingAccount,,,,,,困难
+,,股票T0策略 双边交易额,t0BilateralTradeAmount,,,,,,困难
+,,可转债T0策略 交易账户 ,bondTradingAccount,,,,,,困难
+,,可转债T0策略 双边交易额,bondBilateralTradeAmount,,,,,,困难
+,,股票调仓策略 交易账户,posAdjustTradingAccount,,,,,,困难
+,,股票调仓策略 组合市值,posAdjustCombiValue,,,,,,困难
+,,股票调仓策略 换手率,posAdjustTurnoverRate,,,,,,困难
+,,股票调仓策略 双边交易额,posAdjustTradingAmount,,,,,,困难
+,,事件类型策略 交易账户,afterEventTradingAccount,,,,,,困难
+,,事件类型策略 买入数量,afterEventBuyAmount,,,,,,困难
+,,事件类型策略 买入市值,afterEventBuyValue,,,,,,困难
+,,事件类型策略 卖出数量,afterEventSaleAmount,,,,,,困难
+,,事件类型策略 卖出市值,afterEventSaleValue,,,,,,困难
+,,股指期货策略 交易合约,indexFuturesTradeAgreement,,,,,,困难
+,,股指期货策略 交易张数,indexFuturesTradeQty,,,,,,困难
+,,股指期货策略 成交价格,indexFuturesTradeAvgPx,,,,,,困难
+,组合持仓情况,现货市值,spotPosition,,,,,,困难
+,,当日现货市值变动,spotPositionChange,,,,,,困难
+,,现-期货敞口,exposure,,,,,,困难
+,,期货持仓总量,futureHolding,,,,,,困难
+,,期货持仓,futureHoldingDetail,,,,,,困难
+,Mercury策略--成交情况,交易数量,mercuryExecTradeQty,,,,,,困难
+,,成交均价,mercuryExecAvgPx,,,,,,困难
+,,成交市值,mercuryExecMarketValue,,,,,,困难
+,Mercury策略--现有持仓,市值,mercuryPosMarketValue,,,,,,困难
+,策略版本,策略名称 / 更新时间 /策略版本,/api/strategy/queryXmasterStrategy ,,,,,,困难
+,期货保证金,占用保证金,futuresOccupiedDeposit,,,,,,困难
+,,可用期货保证金,futuresTradableDeposit,,,,,,困难
+,,股票资产,futuresSymbolAsset,,,,,,困难
+交易监控-基差价差监控,基差,查询基差合约年份交易月份历史月份,/api/queryBasisSpread/queryFutures ,,,,,,困难
+,价差,价差的6个近月远月的交易月份历史月份,/api/queryBasisSpread/queryCloseFarMonth,,,,,,困难
+,基差监控 / 基差升贴水率,合约,securityId,,,,,,困难
+,,月份,month,,,,,,困难
+,价差监控 / 价差比率,合约,securityId,,,,,,困难
+,,近月,farMonth,,,,,,困难
+,,远月,closeMonth,,,,,,困难
+Alpha视图,顶部,总盈利,alphaGrossProfit,,,,,,困难
+,,组合市值,alphaLongMarketValue,,,,,,困难
+,,alpha盈利,alphaProfit,,,,,,困难
+,,基差盈利,alphaBasisProfit,,,,,,困难
+,,敞口,alphaExposureProfit,,,,,,困难
+,市场风格,市场风格,barraFactor,300,style,,,,困难
+,,分位数,alphaMarketQuantile,,,,,,困难
+,,收益率,alphaMarketYieldRate,,,,,,困难
+,权重,300组合,alphaCombiIndexWeight,300组合,,,,,困难
+,,500组合,,500组合,,,,,困难
+,,1000组合,,1000组合,,,,,困难
+,组合,多头市值,alphaLongMarketValue,300组合  /  500组合  /  1000组合,,,,,困难
+,,组合对冲市值,alphaPortfolioHedgingMarketValue,,,,,,困难
+,,敞口比例,alphaExposureRatio,,,,,,困难
+,,组合收益率,alphaPortfolioYield,,,,,,困难
+,,多头收益率,alphaLongYield,,,,,,困难
+,,多空收益率,alphaLongShortYield,,,,,,困难
+,,基差收益率,alphaBasisYield,,,,,,困难
+,,alpha盈利,alphaProfit,,,,,,困难
+,,基差盈利,alphaBasisProfit,,,,,,困难
+,,敞口盈利,alphaExposureProfit,,,,,,困难
+,,总盈利,alphaGrossProfit,,,,,,困难
+,股票持仓,偏离,alphaSymbolOffset,300组合  /  500组合  /  1000组合,,,,,困难
+,,持仓占比,alphaSymbolPositionOccupy,,,,,,困难
+,,证券代码,alphaSymbolTopTen,,,,,,困难
+,,持仓张数,alphaBasisHoldingQty,,,,,,困难
+,,加仓张数,alphaBasisAddQty,,,,,,困难
+,,到期日,alphaBasisExpiringDate,,,,,,困难
+,,到期天数,alphaBasisExpiringLeftDay,,,,,,困难
+,,年化贴水,alphaBasisAnnualizedDiscount,,,,,,困难
+,,成交价,alphaBasisExecPx,,,,,,困难
+,,成交贴水,alphaBasisExecDiscount,,,,,,困难
+,股票调仓监控,保证金占用,alphaDepositOccupiedRate,300组合  /  500组合  /  1000组合,,,,,困难
+,,期现匹配,alphaFutureMatch,,,,,,困难
+,股票调仓监控,买入//调仓,alphaStockAdjustBuyAmount,,,,,,困难
+,,卖出//调仓,alphaStockAdjustSellAmount,,,,,,困难
+,股票建仓监控,买入//建仓,alphaStockOpenBuyAmount,,,,,,困难
+,,卖出//建仓,alphaStockOpenSellAmount,,,,,,困难
+,,完成,alphaStockOpenExecProgress,,,,,,困难
+,,基差,alphaStockOpenExecBasis,,,,,,困难
+,alpha底部,行业贡献,barraFactor,300组合  /  500组合  /  1000组合,,style,,,困难
+,,barra因子贡献,,,,industry,,,困难
