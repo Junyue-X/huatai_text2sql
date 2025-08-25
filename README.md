@@ -12,10 +12,16 @@ A specialized SQL generation agent that converts natural language queries into T
 ### File Structure
 ```
 t_metric2sql/
-├── t_metrics_agent.py    # Main agent implementation
-├── metric.csv           # Metrics dictionary with names and tags
-├── promptnew.txt        # SQL generation prompt template
-└── README.md           # This file
+├── t_metrics_agent_v2.py      # 主要代理实现 (ReAct + 验证)
+├── t_metrics_agent.py         # 简化版代理实现
+├── analyzer.py                # SQL验证客户端
+├── timeplus_schema_reader.py  # 动态Schema读取模块
+├── metric.csv                 # 指标字典数据
+├── prompt.txt                 # SQL生成提示模板
+├── agent_config.json          # 代理配置文件
+├── agent_config_example.json  # 配置文件示例
+├── requirements.txt           # 依赖包列表
+└── README.md                  # 说明文档
 ```
 
 ### Quick Start
@@ -26,15 +32,24 @@ t_metric2sql/
 
 2. Run the agent:
    ```python
+   # 推荐使用V2版本（带验证功能）
+   python t_metrics_agent_v2.py
+   
+   # 或者使用简化版本
    python t_metrics_agent.py
    ```
 
 ### Usage Example
 ```python
-from t_metrics_agent import generate_sql
+# V2版本（推荐）
+from t_metrics_agent_v2 import generate_sql_v2
 
-# Generate SQL from natural language
 query = "Show tick market data latency for Shenzhen"
+sql = generate_sql_v2(query)
+print(sql)
+
+# 简化版本
+from t_metrics_agent import generate_sql
 sql = generate_sql(query)
 print(sql)
 ```
@@ -58,10 +73,16 @@ print(sql)
 ### 文件结构
 ```
 t_metric2sql/
-├── t_metrics_agent.py    # 主要代理实现
-├── metric.csv           # 指标字典，包含名称和标签
-├── promptnew.txt        # SQL 生成提示模板
-└── README.md           # 说明文件
+├── t_metrics_agent_v2.py      # 主要代理实现 (ReAct + 验证)
+├── t_metrics_agent.py         # 简化版代理实现
+├── analyzer.py                # SQL验证客户端
+├── timeplus_schema_reader.py  # 动态Schema读取模块
+├── metric.csv                 # 指标字典数据
+├── prompt.txt                 # SQL生成提示模板
+├── agent_config.json          # 代理配置文件
+├── agent_config_example.json  # 配置文件示例
+├── requirements.txt           # 依赖包列表
+└── README.md                  # 说明文档
 ```
 
 ### 快速开始
@@ -72,15 +93,24 @@ t_metric2sql/
 
 2. 运行代理：
    ```python
+   # 推荐使用V2版本（带验证功能）
+   python t_metrics_agent_v2.py
+   
+   # 或者使用简化版本
    python t_metrics_agent.py
    ```
 
 ### 使用示例
 ```python
-from t_metrics_agent import generate_sql
+# V2版本（推荐）
+from t_metrics_agent_v2 import generate_sql_v2
 
-# 从自然语言生成 SQL
 query = "查询深圳的tick行情延时"
+sql = generate_sql_v2(query)
+print(sql)
+
+# 简化版本
+from t_metrics_agent import generate_sql
 sql = generate_sql(query)
 print(sql)
 ```
